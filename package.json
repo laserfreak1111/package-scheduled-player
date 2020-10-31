@@ -1,7 +1,7 @@
 {
-    "name": "Scheduled Player",
-    "author": "Florian Wesch <fw@info-beamer.com>",
-    "desc": "A schedulable playlist player with custom pages, plugins and animations",
+    "name": "Scheduled Player BSK Edition",
+    "author": "Florian Wesch / Florian Bergmann <fw@info-beamer.com>",
+    "desc": "A schedulable playlist player with custom pages, plugins and animations and custom screens for bsk led walls",
     "repository": "https://github.com/info-beamer/package-scheduled-player",
     "version": "beta17",
     "lifecycle": "production",
