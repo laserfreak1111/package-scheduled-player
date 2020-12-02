@@ -1058,7 +1058,7 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 					local t = clock.since_midnight()
 	
 	
-					local mydate = os.date("%x")
+					local mydate = os.date("dd.mm.yyyy")
 
 					local w = font:width(mydate, size)
 
