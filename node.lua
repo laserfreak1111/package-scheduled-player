@@ -1051,7 +1051,7 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
         return function(starts, ends)
             for now in helper.frame_between(starts, ends) do
 			
-				os.setlocale ("de", "collate")
+				
 				if clock_type == "date" then
 				
 					
@@ -1074,7 +1074,9 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 					font:write(x, y1, mydate, size, r,g,b,1)
 					
 				elseif clock_type == "weekday" then
-					local mydate = os.date("%A")
+					days = {"Sonntag","Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"}
+				
+					local mydate = days[os.date("%w")]
 				
 					local w = font:width(mydate, size)
 
