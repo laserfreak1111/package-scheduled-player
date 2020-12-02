@@ -1085,7 +1085,7 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 				
 				
 					--local mydate = os.date("Wochennummer: %w")
-					local mydate = mytable[3]
+					local mydate = mytable[os.date("%w")]
 					local w = font:width(mydate, size)
 
 					local x
