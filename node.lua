@@ -1044,31 +1044,37 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 
         if clock_type == "hms" then
             fmt = "%02d:%02d:%02d"
-        else
+		else
             fmt = "%02d:%02d"
         end
 
         return function(starts, ends)
             for now in helper.frame_between(starts, ends) do
-                local t = clock.since_midnight()
-                local time = string.format(fmt,
-                    math.floor(t / 3600),
-                    math.floor(t % 3600 / 60),
-                    math.floor(t % 60)
-                )
+			
+			
+				if clock_type == "date" then
+				
+				else
+					local t = clock.since_midnight()
+	
+	
+					local mydate = os.date("%x")
 
-                local w = font:width(time, size)
+					local w = font:width(mydate, size)
 
-                local x
-                if clock_align == "left" then
-                    x = x1
-                elseif clock_align == "right" then
-                    x = x2 - w
-                elseif clock_align == "center" then
-                    x = x1 + (x2-x1)/2 - w/2
-                end
+					local x
+					if clock_align == "left" then
+						x = x1
+					elseif clock_align == "right" then
+						x = x2 - w
+					elseif clock_align == "center" then
+						x = x1 + (x2-x1)/2 - w/2
+					end
 
-                font:write(x, y1, time, size, r,g,b,1)
+					font:write(x, y1, mydate, size, r,g,b,1)
+				
+				end
+
             end
         end
     elseif clock_mode == "analog_clock" then
