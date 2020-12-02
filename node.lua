@@ -1077,7 +1077,7 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 					days = {"Sonntag","Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"}
 				
 					--local mydate = os.date("Wochennummer: %w")
-					local mydate = days[3]
+					local mydate = days[0]
 					local w = font:width(mydate, size)
 
 					local x
