@@ -1051,10 +1051,10 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
         return function(starts, ends)
             for now in helper.frame_between(starts, ends) do
 			
-			
+				os.setlocale('de_DE')
 				if clock_type == "date" then
 				
-				
+					
 					local t = clock.since_midnight()
 	
 	
