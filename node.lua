@@ -1076,7 +1076,7 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 				elseif clock_type == "weekday" then
 					days = {"Sonntag","Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"}
 				
-					local mydate = days[os.date("%w")]
+					local mydate = os.date("%w")
 				
 					local w = font:width(mydate, size)
 
