@@ -1074,10 +1074,12 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 					font:write(x, y1, mydate, size, r,g,b,1)
 					
 				elseif clock_type == "weekday" then
-					local days = {"Sonntag","Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"}
+					local mytable = {}
+					mytable[0]= "Lua"
+				
 				
 					--local mydate = os.date("Wochennummer: %w")
-					local mydate = days[0]
+					local mydate = mytable[0]
 					local w = font:width(mydate, size)
 
 					local x
