@@ -15,7 +15,7 @@ local min, max, abs, floor, ceil = math.min, math.max, math.abs, math.floor, mat
 local font_regl = resource.load_font "default-font.ttf"
 local font_bold = resource.load_font "default-font-bold.ttf"
 local font_7seg = resource.load_font "7segment.ttf"
-
+local font_itc_o = resource.load_font "officinasanblkitctt.ttf"
 local colored = resource.create_shader[[
     uniform sampler2D Texture;
     varying vec2 TexCoord;
@@ -1038,8 +1038,10 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 
         if clock_style == 1 then
             font = font_7seg
-        else
-            font = font_regl
+        elseif clock_style == 2 then
+			font = font_regl
+		elseif clock_style == 3 then
+            font = font_itc_o
         end
 
         if clock_type == "hms" then

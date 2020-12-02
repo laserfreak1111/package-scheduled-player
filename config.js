@@ -1221,6 +1221,7 @@ Vue.component('tile-option-time', TileOption.extend({
     styles: [
       [1, "Style 1"],
       [2, "Style 2"],
+	  [3, "Style 3 ITC Officina Sans, Bold"],
     ],
     aligns: [
       ["center", "Centered"],
