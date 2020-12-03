@@ -15,7 +15,7 @@ local min, max, abs, floor, ceil = math.min, math.max, math.abs, math.floor, mat
 local font_regl = resource.load_font "default-font.ttf"
 local font_bold = resource.load_font "default-font-bold.ttf"
 local font_7seg = resource.load_font "7segment.ttf"
-local font_itc_o = resource.load_font "officinasanblkitctt.ttf"
+local font_itc_o = resource.load_font "stadthalle-itc.ttf"
 local colored = resource.create_shader[[
     uniform sampler2D Texture;
     varying vec2 TexCoord;
