@@ -1077,13 +1077,13 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 					
 				elseif clock_type == "weekday" then
 					local mytable = {}
-					mytable[0]= "Sonntag"
-					mytable[1]= "Montag"
-					mytable[2]= "Dienstag"
-					mytable[3]= "Mittwoch"
-					mytable[4]= "Donnerstag"
-					mytable[5]= "Freitag"
-					mytable[6]= "Samstag"
+					mytable[0]= "SONNTAG"
+					mytable[1]= "MONTAG"
+					mytable[2]= "DIENSTAG"
+					mytable[3]= "MITTWOCH"
+					mytable[4]= "DONNERSTAG"
+					mytable[5]= "FREITAG"
+					mytable[6]= "SAMSTAG"
 				
 				
 					--local mydate = os.date("Wochennummer: %w")
