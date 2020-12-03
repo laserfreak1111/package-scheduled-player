@@ -1330,6 +1330,7 @@ Vue.component('tile-option-markup', TileOption.extend({
       [2.0, "2 seconds fade"],
     ],
     font_sizes: [
+	  [ 18, "18 pixel"],
       [ 20, "20 pixel"],
       [ 25, "25 pixel"],
 	  [ 30, "30 pixel"],
