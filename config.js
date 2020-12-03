@@ -1332,6 +1332,7 @@ Vue.component('tile-option-markup', TileOption.extend({
     font_sizes: [
       [ 20, "20 pixel"],
       [ 25, "25 pixel"],
+	  [ 30, "30 pixel"],
       [ 35, "35 pixel"],
       [ 45, "45 pixel"],
       [ 55, "55 pixel"],
