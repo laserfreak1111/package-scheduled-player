@@ -1214,6 +1214,7 @@ Vue.component('tile-option-time', TileOption.extend({
     // ],
     types: [
       ["hm", "Hours & Minutes"],
+	  ["hm-text", "Hours & Minutes with Text"],
       ["hms", "Hours, Minutes & Seconds"],
 	  ["date", "Date"],
 	  ["weekday", "Weekday"],
