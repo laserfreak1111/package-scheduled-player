@@ -1076,12 +1076,16 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 					font:write(x, y1, mydate, size, r,g,b,1)
 					
 				elseif clock_type == "hm-text" then	
-						local t = clock.since_midnight()
-	
-	
-						local mydate = os.date("%H:%M UHR")
+					fmt = "%02d:%02d"
+				
+					local t = clock.since_midnight()
+					local time = string.format(fmt,
+						math.floor(t / 3600),
+						math.floor(t % 3600 / 60),
+						math.floor(t % 60)
+					)
 
-					local w = font:width(mydate, size)
+					local w = font:width(time, size)
 
 					local x
 					if clock_align == "left" then
@@ -1092,8 +1096,7 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 						x = x1 + (x2-x1)/2 - w/2
 					end
 
-					font:write(x, y1, mydate, size, r,g,b,1)
-					
+					font:write(x, y1, time.." UHR", size, r,g,b,1)
 				elseif clock_type == "weekday" then
 					local mytable = {}
 					mytable[0]= "SONNTAG"
