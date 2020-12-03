@@ -1107,10 +1107,10 @@ local function TimeTile(asset, config, x1, y1, x2, y2)
 					mytable[5]= "FREITAG"
 					mytable[6]= "SAMSTAG"
 				
-				
+					
 					--local mydate = os.date("Wochennummer: %w")
 				
-					local mydate = mytable[tonumber(os.date("%w"))]
+					local mydate = mytable[tonumber(clock.day_of_week())]
 					local w = font:width(mydate, size)
 
 					local x
