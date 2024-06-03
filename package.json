@@ -3,7 +3,7 @@
     "author": "Florian Wesch / Florian Bergmann <fw@info-beamer.com>",
     "desc": "A schedulable playlist player with custom pages, plugins and animations and custom screens for bsk led walls",
     "repository": "https://github.com/info-beamer/package-scheduled-player",
-    "version": "beta17",
+    "version": "beta18",
     "lifecycle": "production",
     "platforms": ["pi/epoch-1", "pi-4"],
     "runtime": {
